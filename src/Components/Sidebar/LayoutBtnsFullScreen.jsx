@@ -162,7 +162,7 @@ function LayoutBtn({ sectionKey, goToSection, index, currentIndex }) {
         {sections[sectionKey].icon}
         {sections[sectionKey].name}
       </button>
-      <div className="layout-tooltip-fullscreen">{ sections[sectionKey].name }</div>
+      {/* <div className="layout-tooltip-fullscreen">{ sections[sectionKey].name }</div> */}
     </div>
   );
 }

@@ -14,7 +14,7 @@ function LiveBtnFullScreen({ showLivePreview, toggleSideBySide }) {
             : (<> <FaCircle className="dual-icon-1"></FaCircle><FaCircle className="dual-icon-2"></FaCircle> { showLivePreview ? 'Editor Only' : 'Live Preview' } </>)
           }
         </button>
-        <div className="sidebar-tooltip-fullscreen">{ showLivePreview ? 'Edit Only' : 'Live Preview' }</div>
+        {/* <div className="sidebar-tooltip-fullscreen">{ showLivePreview ? 'Edit Only' : 'Live Preview' }</div> */}
       </div>
     </>
   );
