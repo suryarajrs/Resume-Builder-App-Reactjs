@@ -1,0 +1,400 @@
+/* ------------------------------- Personal ----------------------------------- */
+
+.personal-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+
+}
+
+.personal-container label {
+  min-width: 48%;
+}
+
+/* ---------------------------------- Links ---------------------------------- */
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: auto;
+}
+
+.link-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.link-div > p {
+  width: 10%;
+}
+
+div.link-div > label {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link-div input {
+  flex-grow: 1;
+}
+
+.link-div:first-child > p {
+  position: relative;
+  top: 22%;
+}
+
+/* --------------------------------- Skills ----------------------------------- */
+
+.skill-nav-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  height: 2rem;
+}
+
+.skill-nav-div button {
+  height: 1.5rem;
+}
+
+div.skill-toggle > label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  min-width: 10rem;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  overflow: auto;
+}
+
+.skill-div {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  gap: 1rem;
+}
+
+.skill-order-div {
+  width: 5rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.skill-div > input {
+  flex: 1 0 auto;
+}
+
+.skill-add-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.skill-div button,
+.skill-add-div button,
+.bullet-add-btn,
+.bullet-remove-btn {
+  border-radius: 3px;
+  width: 6rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.skill-div > button,
+.bullet-remove-btn {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.skill-order-div > div {
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+button.grip-btn {
+  width: 3rem;
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  background-color: inherit;
+}
+
+.grip-btn:hover {
+  background-color: var(--input-bg);
+}
+
+.grip-btn svg {
+  height: 1.5rem;
+  width: 1.1rem;
+}
+
+.grip-btn:hover svg {
+  filter: brightness(0.7);
+}
+
+/* ---------------------------- section select ------------------------ */
+
+.select-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.select-container {
+  min-height: 40%;
+  width: 95%;
+  background-color: whitesmoke;
+  padding: 1.2rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.select-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.select-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.select-close-btn {
+  height: 1.8rem;
+  width: 3rem;
+  border-radius: 3px;
+}
+
+.select-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem;
+  color: var(--input-bg);
+  border-radius: 3px;
+}
+
+.select-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 0.3rem;
+  padding: 10px;
+}
+
+/* ------------------------------- Work Exp ----------------------------------- */
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.work-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.work-indicator > span {
+  font-weight: 200;
+  font-size: 0.90rem;
+}
+
+.work-nav {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.work-nav > button {
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.work-del {
+  color: var(--color-accent);
+}
+
+.work-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.work-body > label {
+  min-width: 45%;
+}
+
+.work-body > label > span {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.bullet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  overflow: scroll;
+}
+
+.bullet-container > p {
+  width: 100%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.bullet-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+}
+
+.bullet-div > input {
+  flex: 1 0 auto;
+}
+
+
+/* ------------------------------- Projects ----------------------------------- */
+
+.project-container {
+  height: 100%;
+}
+
+.project-header, .edu-header,
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  width: 80%;
+}
+
+
+.name-stack-div {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.name-stack-div > label:first-child {
+  flex: 1.5 0;
+}
+
+.name-stack-div > label + label {
+  flex: 3 0;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ------------------------------- Education ----------------------------------- */
+
+.edu-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.edu-body > label {
+  min-width: 45%;
+}
+
+
+/* ------------------------------- Interests ----------------------------------- */
+
+.interest-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.interest-container > label {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.interest-container textarea {
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+}
+
+ /* section  media */
+@media (min-width: 468px) {
+  .select-container {
+    min-height: 40%;
+    width: 80%;
+  }
+}
+
+@media (min-width: 968px) {
+  .select-container {
+    min-height: 40%;
+    width: 60%;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .select-container {
+    min-height: 40%;
+    width: 40%;
+   
+  }
+}
